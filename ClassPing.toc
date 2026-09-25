@@ -1,0 +1,10 @@
+## Interface: 11509, 16001, 20506, 30405, 38002, 40402, 50504, 120100
+## Title: ClassPing
+## Notes: FPS and latency in your class color - hover for details, right-click for settings
+## Author: asura
+## Version: 2.5
+## SavedVariables: ClassPingDB
+## IconTexture: Interface\AddOns\ClassPing\Media\icon
+## X-Category: Interface Enhancements
+
+ClassPing.lua
