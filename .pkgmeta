@@ -1,0 +1,6 @@
+package-as: ClassPing
+
+ignore:
+  - .github
+  - .gitignore
+  - .pkgmeta

@@ -617,7 +617,8 @@ SlashCmdList.CLASSPING = function(msg)
       if match then db.font = match; ApplyFont(); Redraw(); say("font: " .. match) else say("no font called '" .. arg .. "'. /cp font lists them.") end
     end
   elseif cmd == "debug" then
-    say("version 2.5, line shown=" .. tostring(f:IsShown()) .. " visible=" .. tostring(f:IsVisible()))
+    local GetMeta = (C_AddOns and C_AddOns.GetAddOnMetadata) or GetAddOnMetadata
+    say("version " .. tostring(GetMeta and GetMeta(ADDON, "Version")) .. ", line shown=" .. tostring(f:IsShown()) .. " visible=" .. tostring(f:IsVisible()))
     if not panel then
       say("settings window: NOT BUILT. error=" .. tostring(f.buildError))
     else
